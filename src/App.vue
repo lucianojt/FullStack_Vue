@@ -6,8 +6,8 @@
           <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="BV">
         </b-navbar-brand>
         <router-link to="/" class="nav-item nav-link active">Home</router-link>|
-        <router-link to="/Categories" class="nav-item nav-link">Categories</router-link>
-
+        <router-link to="/Categories" class="nav-item nav-link">Categories</router-link>|
+        <router-link to="/Chart" class="nav-item nav-link">Chart</router-link>
         |
       </div>
     </nav>
