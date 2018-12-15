@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Product list</h1>
+    <h1>Categories List</h1>
     <b-table striped hover :items="categories" :fields="fields" :per-page = "pageSize" :current-page = "pageIndex"></b-table>
     <b-pagination size="md" :total-rows="categories.length" v-model="pageIndex" :per-page="pageSize">
     </b-pagination>
@@ -19,19 +19,22 @@ export default {
           pageIndex: 1,
           fields: [{
             key:'category_id',
-            sortable : true
-          },
-          {
-              key:'category_name',
-            sortable : true
-          },
-          {
-              key:'description',
             sortable : true,
-            variant: 'danger'
+            variant: 'Secondary'
+          },
+          {
+            key:'category_name',
+            sortable : true,
+            variant: 'Secondary'
+          },
+          {
+            key:'description',
+            sortable : true,
+            variant: 'Secondary'
           }]
       }
   },
+  
   mounted(){
       var instance = this
       axios

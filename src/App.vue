@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="nav navbar-nav">
-      <router-link to="/" class="nav-item nav-link active">Home</router-link> |
-      <router-link to="/about" class="nav-item nav-link">About</router-link> |
-      <router-link to="/Categories" class="nav-item nav-link">Categories</router-link> |
-    
-    </div>
+      <div class="nav navbar-nav">
+        <b-navbar-brand href="#">
+          <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="BV">
+        </b-navbar-brand>
+        <router-link to="/" class="nav-item nav-link active">Home</router-link>|
+        <router-link to="/Categories" class="nav-item nav-link">Categories</router-link>
+
+        |
+      </div>
     </nav>
     <router-view/>
   </div>
@@ -14,7 +17,7 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
